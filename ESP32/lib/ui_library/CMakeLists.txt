@@ -1,4 +1,6 @@
 SET(SOURCES screens/ui_screenhome.c
+    screens/ui_screenhomeairpressure.c
+    screens/ui_screenhomeco2.c
     screens/ui_screenoptions.c
     screens/ui_screenpin.c
     ui.c
