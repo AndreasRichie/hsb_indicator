@@ -18,6 +18,7 @@ extern "C" {
 
 // SCREEN: ui_screenhome
 void ui_screenhome_screen_init(void);
+void ui_event_screenhome( lv_event_t * e);
 extern lv_obj_t *ui_screenhome;
 extern lv_obj_t *ui_labeltitlehomescreen;
 extern lv_obj_t *ui_containercolorbarhome;
@@ -33,6 +34,38 @@ extern lv_obj_t *ui_labeloutdoor;
 extern lv_obj_t *ui_labeldatetime;
 extern lv_obj_t *ui_imgconnected;
 extern lv_obj_t *ui_containercolorbannerbottom;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screenhomeairpressure
+void ui_screenhomeairpressure_screen_init(void);
+void ui_event_screenhomeairpressure( lv_event_t * e);
+extern lv_obj_t *ui_screenhomeairpressure;
+extern lv_obj_t *ui_labeltitlehomescreen1;
+extern lv_obj_t *ui_containercolorbarhome1;
+extern lv_obj_t *ui_containercolorbannerbottom1;
+extern lv_obj_t *ui_labelairpressuretext;
+extern lv_obj_t *ui_labelairpressurevalue;
+extern lv_obj_t *ui_imgconnected1;
+extern lv_obj_t *ui_labeldatetime1;
+void ui_event_buttonoptions1( lv_event_t * e);
+extern lv_obj_t *ui_buttonoptions1;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screenhomeco2
+void ui_screenhomeco2_screen_init(void);
+void ui_event_screenhomeco2( lv_event_t * e);
+extern lv_obj_t *ui_screenhomeco2;
+extern lv_obj_t *ui_labeltitlehomescreen2;
+extern lv_obj_t *ui_containercolorbarhome2;
+extern lv_obj_t *ui_barroomclimate1;
+extern lv_obj_t *ui_containercolorbannerbottom2;
+extern lv_obj_t *ui_labelco2leveltext;
+extern lv_obj_t *ui_labelco2levelvalue;
+extern lv_obj_t *ui_imgconnected2;
+extern lv_obj_t *ui_labeldatetime2;
+void ui_event_buttonoptions2( lv_event_t * e);
+extern lv_obj_t *ui_buttonoptions2;
+extern lv_obj_t *ui_label3;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_screenoptions

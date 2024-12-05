@@ -164,5 +164,6 @@ lv_obj_set_style_bg_opa(ui_containercolorbannerbottom, 255, LV_PART_MAIN| LV_STA
 lv_obj_set_style_blend_mode(ui_containercolorbannerbottom, LV_BLEND_MODE_SUBTRACTIVE, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 lv_obj_add_event_cb(ui_buttonoptions, ui_event_buttonoptions, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_screenhome, ui_event_screenhome, LV_EVENT_ALL, NULL);
 
 }
