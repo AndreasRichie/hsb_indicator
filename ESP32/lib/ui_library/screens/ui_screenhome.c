@@ -58,10 +58,10 @@ lv_obj_add_flag( ui_buttonoptions, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
 lv_obj_clear_flag( ui_buttonoptions, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonoptions, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonoptions, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonoptions, &ui_img_settings_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonoptions, &ui_img_icons_settings_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_imgindoor = lv_img_create(ui_screenhome);
-lv_img_set_src(ui_imgindoor, &ui_img_indoor_png);
+lv_img_set_src(ui_imgindoor, &ui_img_icons_indoor_png);
 lv_obj_set_width( ui_imgindoor, LV_SIZE_CONTENT);  /// 1
 lv_obj_set_height( ui_imgindoor, LV_SIZE_CONTENT);   /// 1
 lv_obj_set_x( ui_imgindoor, lv_pct(-30) );
@@ -73,7 +73,7 @@ lv_obj_add_flag( ui_imgindoor, LV_OBJ_FLAG_ADV_HITTEST );   /// Flags
 lv_obj_clear_flag( ui_imgindoor, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 
 ui_imghumidty = lv_img_create(ui_screenhome);
-lv_img_set_src(ui_imghumidty, &ui_img_humidity_png);
+lv_img_set_src(ui_imghumidty, &ui_img_icons_humidity_png);
 lv_obj_set_width( ui_imghumidty, LV_SIZE_CONTENT);  /// 20
 lv_obj_set_height( ui_imghumidty, LV_SIZE_CONTENT);   /// 1
 lv_obj_set_x( ui_imghumidty, lv_pct(0) );
@@ -85,7 +85,7 @@ lv_obj_add_flag( ui_imghumidty, LV_OBJ_FLAG_ADV_HITTEST );   /// Flags
 lv_obj_clear_flag( ui_imghumidty, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 
 ui_imgoutdoor = lv_img_create(ui_screenhome);
-lv_img_set_src(ui_imgoutdoor, &ui_img_outdoor_png);
+lv_img_set_src(ui_imgoutdoor, &ui_img_icons_outdoor_png);
 lv_obj_set_width( ui_imgoutdoor, LV_SIZE_CONTENT);  /// 1
 lv_obj_set_height( ui_imgoutdoor, LV_SIZE_CONTENT);   /// 1
 lv_obj_set_x( ui_imgoutdoor, lv_pct(30) );
@@ -140,7 +140,7 @@ lv_label_set_text(ui_labeldatetime,"<DD.MM.YY hh:mm>");
 lv_obj_set_style_text_font(ui_labeldatetime, &lv_font_montserrat_22, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 ui_imgconnected = lv_img_create(ui_screenhome);
-lv_img_set_src(ui_imgconnected, &ui_img_connected_png);
+lv_img_set_src(ui_imgconnected, &ui_img_icons_connected_png);
 lv_obj_set_width( ui_imgconnected, LV_SIZE_CONTENT);  /// 100
 lv_obj_set_height( ui_imgconnected, LV_SIZE_CONTENT);   /// 100
 lv_obj_set_x( ui_imgconnected, lv_pct(-44) );

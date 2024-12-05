@@ -16,6 +16,8 @@ lv_obj_set_height( ui_labeltitleoptions1, LV_SIZE_CONTENT);   /// 4
 lv_obj_set_x( ui_labeltitleoptions1, lv_pct(0) );
 lv_obj_set_y( ui_labeltitleoptions1, lv_pct(-43) );
 lv_obj_set_align( ui_labeltitleoptions1, LV_ALIGN_CENTER );
+lv_obj_set_flex_flow(ui_labeltitleoptions1,LV_FLEX_FLOW_ROW);
+lv_obj_set_flex_align(ui_labeltitleoptions1, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
 lv_label_set_long_mode(ui_labeltitleoptions1,LV_LABEL_LONG_CLIP);
 lv_label_set_text(ui_labeltitleoptions1,"PIN Sicherung");
 lv_label_set_recolor(ui_labeltitleoptions1,"true");
@@ -76,7 +78,7 @@ lv_obj_add_flag( ui_buttonexitfrompin, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flag
 lv_obj_clear_flag( ui_buttonexitfrompin, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonexitfrompin, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonexitfrompin, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonexitfrompin, &ui_img_arrow_left_white_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonexitfrompin, &ui_img_icons_arrow_left_white_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 lv_keyboard_set_textarea(ui_keyboard1,ui_textareapin);
 lv_obj_add_event_cb(ui_buttonexitfrompin, ui_event_buttonexitfrompin, LV_EVENT_ALL, NULL);

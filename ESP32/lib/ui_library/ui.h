@@ -96,29 +96,67 @@ void ui_event_buttonexitfrompin( lv_event_t * e);
 extern lv_obj_t *ui_buttonexitfrompin;
 // CUSTOM VARIABLES
 
+// SCREEN: ui_screenrooms
+void ui_screenrooms_screen_init(void);
+extern lv_obj_t *ui_screenrooms;
+extern lv_obj_t *ui_labeltitleoptions2;
+extern lv_obj_t *ui_containercolorbaroptions1;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screenoutdoorsensor
+void ui_screenoutdoorsensor_screen_init(void);
+extern lv_obj_t *ui_screenoutdoorsensor;
+extern lv_obj_t *ui_containercolorbaroptions2;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screenwlan
+void ui_screenwlan_screen_init(void);
+extern lv_obj_t *ui_screenwlan;
+extern lv_obj_t *ui_containercolorbaroptions3;
+extern lv_obj_t *ui_containercolorbaroptions4;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screenlanguage
+void ui_screenlanguage_screen_init(void);
+extern lv_obj_t *ui_screenlanguage;
+extern lv_obj_t *ui_containercolorbaroptions5;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screenfurtheroptions
+void ui_screenfurtheroptions_screen_init(void);
+extern lv_obj_t *ui_screenfurtheroptions;
+extern lv_obj_t *ui_containercolorbaroptions6;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_screensensoractivity
+void ui_screensensoractivity_screen_init(void);
+extern lv_obj_t *ui_screensensoractivity;
+extern lv_obj_t *ui_containercolorbaroptions7;
+// CUSTOM VARIABLES
+
 // EVENTS
 extern lv_obj_t *ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
-LV_IMG_DECLARE( ui_img_settings_png);   // assets/settings.png
-LV_IMG_DECLARE( ui_img_indoor_png);   // assets/indoor.png
-LV_IMG_DECLARE( ui_img_humidity_png);   // assets/humidity.png
-LV_IMG_DECLARE( ui_img_outdoor_png);   // assets/outdoor.png
-LV_IMG_DECLARE( ui_img_connected_png);   // assets/connected.png
-LV_IMG_DECLARE( ui_img_arrow_left_white_png);   // assets/arrow_left_white.png
-LV_IMG_DECLARE( ui_img_rooms_png);   // assets/rooms.png
-LV_IMG_DECLARE( ui_img_outdoor_white_png);   // assets/outdoor_white.png
-LV_IMG_DECLARE( ui_img_wifi_icon_small_png);   // assets/wifi_icon_small.png
-LV_IMG_DECLARE( ui_img_language_png);   // assets/language.png
-LV_IMG_DECLARE( ui_img_options_png);   // assets/options.png
-LV_IMG_DECLARE( ui_img_list_icon_png);   // assets/list_icon.png
-LV_IMG_DECLARE( ui_img_key_icon_small_png);   // assets/key_icon_small.png
-LV_IMG_DECLARE( ui_img_signal0_png);   // assets/signal0.png
-LV_IMG_DECLARE( ui_img_signal1_png);   // assets/signal1.png
-LV_IMG_DECLARE( ui_img_signal2_png);   // assets/signal2.png
-LV_IMG_DECLARE( ui_img_signal3_png);   // assets/signal3.png
-LV_IMG_DECLARE( ui_img_signal4_png);   // assets/signal4.png
-LV_IMG_DECLARE( ui_img_signal5_png);   // assets/signal5.png
+LV_IMG_DECLARE( ui_img_icons_settings_png);   // assets/icons/settings.png
+LV_IMG_DECLARE( ui_img_icons_indoor_png);   // assets/icons/indoor.png
+LV_IMG_DECLARE( ui_img_icons_humidity_png);   // assets/icons/humidity.png
+LV_IMG_DECLARE( ui_img_icons_outdoor_png);   // assets/icons/outdoor.png
+LV_IMG_DECLARE( ui_img_icons_connected_png);   // assets/icons/connected.png
+LV_IMG_DECLARE( ui_img_icons_arrow_left_white_png);   // assets/icons/arrow_left_white.png
+LV_IMG_DECLARE( ui_img_icons_rooms_png);   // assets/icons/rooms.png
+LV_IMG_DECLARE( ui_img_icons_outdoor_white_png);   // assets/icons/outdoor_white.png
+LV_IMG_DECLARE( ui_img_icons_wifi_icon_small_png);   // assets/icons/wifi_icon_small.png
+LV_IMG_DECLARE( ui_img_icons_language_png);   // assets/icons/language.png
+LV_IMG_DECLARE( ui_img_icons_options_png);   // assets/icons/options.png
+LV_IMG_DECLARE( ui_img_icons_list_icon_png);   // assets/icons/list_icon.png
+LV_IMG_DECLARE( ui_img_icons_key_icon_small_png);   // assets/icons/key_icon_small.png
+LV_IMG_DECLARE( ui_img_icons_signal0_png);   // assets/icons/signal0.png
+LV_IMG_DECLARE( ui_img_icons_signal1_png);   // assets/icons/signal1.png
+LV_IMG_DECLARE( ui_img_icons_signal2_png);   // assets/icons/signal2.png
+LV_IMG_DECLARE( ui_img_icons_signal3_png);   // assets/icons/signal3.png
+LV_IMG_DECLARE( ui_img_icons_signal4_png);   // assets/icons/signal4.png
+LV_IMG_DECLARE( ui_img_icons_signal5_png);   // assets/icons/signal5.png
 
 // UI INIT
 void ui_init(void);

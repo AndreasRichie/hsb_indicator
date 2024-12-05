@@ -93,11 +93,55 @@ void ui_event_buttonexitfrompin( lv_event_t * e);
 lv_obj_t *ui_buttonexitfrompin;
 // CUSTOM VARIABLES
 
+
+// SCREEN: ui_screenrooms
+void ui_screenrooms_screen_init(void);
+lv_obj_t *ui_screenrooms;
+lv_obj_t *ui_labeltitleoptions2;
+lv_obj_t *ui_containercolorbaroptions1;
+// CUSTOM VARIABLES
+
+
+// SCREEN: ui_screenoutdoorsensor
+void ui_screenoutdoorsensor_screen_init(void);
+lv_obj_t *ui_screenoutdoorsensor;
+lv_obj_t *ui_containercolorbaroptions2;
+// CUSTOM VARIABLES
+
+
+// SCREEN: ui_screenwlan
+void ui_screenwlan_screen_init(void);
+lv_obj_t *ui_screenwlan;
+lv_obj_t *ui_containercolorbaroptions3;
+lv_obj_t *ui_containercolorbaroptions4;
+// CUSTOM VARIABLES
+
+
+// SCREEN: ui_screenlanguage
+void ui_screenlanguage_screen_init(void);
+lv_obj_t *ui_screenlanguage;
+lv_obj_t *ui_containercolorbaroptions5;
+// CUSTOM VARIABLES
+
+
+// SCREEN: ui_screenfurtheroptions
+void ui_screenfurtheroptions_screen_init(void);
+lv_obj_t *ui_screenfurtheroptions;
+lv_obj_t *ui_containercolorbaroptions6;
+// CUSTOM VARIABLES
+
+
+// SCREEN: ui_screensensoractivity
+void ui_screensensoractivity_screen_init(void);
+lv_obj_t *ui_screensensoractivity;
+lv_obj_t *ui_containercolorbaroptions7;
+// CUSTOM VARIABLES
+
 // EVENTS
 lv_obj_t *ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
-const lv_img_dsc_t *ui_imgset_signal[6] = {&ui_img_signal0_png, &ui_img_signal1_png, &ui_img_signal2_png, &ui_img_signal3_png, &ui_img_signal4_png, &ui_img_signal5_png};
+const lv_img_dsc_t *ui_imgset_signal[6] = {&ui_img_icons_signal0_png, &ui_img_icons_signal1_png, &ui_img_icons_signal2_png, &ui_img_icons_signal3_png, &ui_img_icons_signal4_png, &ui_img_icons_signal5_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -209,6 +253,12 @@ ui_screenhomeairpressure_screen_init();
 ui_screenhomeco2_screen_init();
 ui_screenoptions_screen_init();
 ui_screenpin_screen_init();
+ui_screenrooms_screen_init();
+ui_screenoutdoorsensor_screen_init();
+ui_screenwlan_screen_init();
+ui_screenlanguage_screen_init();
+ui_screenfurtheroptions_screen_init();
+ui_screensensoractivity_screen_init();
 ui____initial_actions0 = lv_obj_create(NULL);
 lv_disp_load_scr( ui_screenhome);
 }

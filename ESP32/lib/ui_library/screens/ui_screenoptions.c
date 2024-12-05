@@ -16,6 +16,8 @@ lv_obj_set_height( ui_labeltitleoptions, LV_SIZE_CONTENT);   /// 4
 lv_obj_set_x( ui_labeltitleoptions, lv_pct(0) );
 lv_obj_set_y( ui_labeltitleoptions, lv_pct(-43) );
 lv_obj_set_align( ui_labeltitleoptions, LV_ALIGN_CENTER );
+lv_obj_set_flex_flow(ui_labeltitleoptions,LV_FLEX_FLOW_ROW);
+lv_obj_set_flex_align(ui_labeltitleoptions, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
 lv_label_set_long_mode(ui_labeltitleoptions,LV_LABEL_LONG_CLIP);
 lv_label_set_text(ui_labeltitleoptions,"Einstellungen");
 lv_label_set_recolor(ui_labeltitleoptions,"true");
@@ -49,7 +51,7 @@ lv_obj_add_flag( ui_buttonexitfromoptions, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// 
 lv_obj_clear_flag( ui_buttonexitfromoptions, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonexitfromoptions, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonexitfromoptions, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonexitfromoptions, &ui_img_arrow_left_white_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonexitfromoptions, &ui_img_icons_arrow_left_white_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonrooms = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonrooms, lv_pct(20));
@@ -63,7 +65,7 @@ lv_obj_add_flag( ui_buttonrooms, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
 lv_obj_clear_flag( ui_buttonrooms, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonrooms, lv_color_hex(0x969696), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonrooms, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonrooms, &ui_img_rooms_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonrooms, &ui_img_icons_rooms_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonoutdoorsensor = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonoutdoorsensor, lv_pct(20));
@@ -77,7 +79,7 @@ lv_obj_add_flag( ui_buttonoutdoorsensor, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Fl
 lv_obj_clear_flag( ui_buttonoutdoorsensor, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonoutdoorsensor, lv_color_hex(0x969696), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonoutdoorsensor, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonoutdoorsensor, &ui_img_outdoor_white_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonoutdoorsensor, &ui_img_icons_outdoor_white_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonwifi = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonwifi, lv_pct(20));
@@ -91,7 +93,7 @@ lv_obj_add_flag( ui_buttonwifi, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
 lv_obj_clear_flag( ui_buttonwifi, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonwifi, lv_color_hex(0x969696), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonwifi, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonwifi, &ui_img_wifi_icon_small_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonwifi, &ui_img_icons_wifi_icon_small_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonlanguage = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonlanguage, lv_pct(20));
@@ -105,7 +107,7 @@ lv_obj_add_flag( ui_buttonlanguage, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
 lv_obj_clear_flag( ui_buttonlanguage, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonlanguage, lv_color_hex(0x969696), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonlanguage, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonlanguage, &ui_img_language_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonlanguage, &ui_img_icons_language_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonfurtheroptions = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonfurtheroptions, lv_pct(20));
@@ -119,7 +121,7 @@ lv_obj_add_flag( ui_buttonfurtheroptions, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// F
 lv_obj_clear_flag( ui_buttonfurtheroptions, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonfurtheroptions, lv_color_hex(0x969696), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonfurtheroptions, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonfurtheroptions, &ui_img_options_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonfurtheroptions, &ui_img_icons_options_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonsensoractivity = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonsensoractivity, lv_pct(20));
@@ -133,7 +135,7 @@ lv_obj_add_flag( ui_buttonsensoractivity, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// F
 lv_obj_clear_flag( ui_buttonsensoractivity, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonsensoractivity, lv_color_hex(0x969696), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonsensoractivity, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonsensoractivity, &ui_img_list_icon_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonsensoractivity, &ui_img_icons_list_icon_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 ui_buttonpin = lv_btn_create(ui_screenoptions);
 lv_obj_set_width( ui_buttonpin, lv_pct(14));
@@ -147,7 +149,7 @@ lv_obj_add_flag( ui_buttonpin, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
 lv_obj_clear_flag( ui_buttonpin, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_buttonpin, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_buttonpin, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_img_src( ui_buttonpin, &ui_img_key_icon_small_png, LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_img_src( ui_buttonpin, &ui_img_icons_key_icon_small_png, LV_PART_MAIN | LV_STATE_DEFAULT );
 
 lv_obj_add_event_cb(ui_buttonexitfromoptions, ui_event_buttonexitfromoptions, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_buttonpin, ui_event_buttonpin, LV_EVENT_ALL, NULL);
