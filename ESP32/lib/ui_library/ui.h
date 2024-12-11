@@ -14,37 +14,43 @@ extern "C" {
 
     #include "lv_i18n.h"
 #include "ui_helpers.h"
+#include "components/ui_comp.h"
+#include "components/ui_comp_hook.h"
 #include "ui_events.h"
+#include "ui_theme_manager.h"
+#include "ui_themes.h"
 
 // SCREEN: ui_screenhome
 void ui_screenhome_screen_init(void);
 void ui_event_screenhome( lv_event_t * e);
 extern lv_obj_t *ui_screenhome;
-extern lv_obj_t *ui_labeltitlehomescreen;
-extern lv_obj_t *ui_containercolorbarhome;
+extern lv_obj_t *ui_containertopbarhome;
+extern lv_obj_t *ui_labeltoptexthome;
 extern lv_obj_t *ui_barroomclimate;
-void ui_event_buttonoptions( lv_event_t * e);
-extern lv_obj_t *ui_buttonoptions;
 extern lv_obj_t *ui_imgindoor;
 extern lv_obj_t *ui_imghumidty;
 extern lv_obj_t *ui_imgoutdoor;
 extern lv_obj_t *ui_labelindoor;
 extern lv_obj_t *ui_labelhumidty;
 extern lv_obj_t *ui_labeloutdoor;
-extern lv_obj_t *ui_labeldatetime;
+extern lv_obj_t *ui_containerbottombarhome;
 extern lv_obj_t *ui_imgconnected;
-extern lv_obj_t *ui_containercolorbannerbottom;
+extern lv_obj_t *ui_labeldatetime;
+void ui_event_buttonoptions( lv_event_t * e);
+extern lv_obj_t *ui_buttonoptions;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_screenhomeairpressure
 void ui_screenhomeairpressure_screen_init(void);
 void ui_event_screenhomeairpressure( lv_event_t * e);
 extern lv_obj_t *ui_screenhomeairpressure;
-extern lv_obj_t *ui_labeltitlehomescreen1;
-extern lv_obj_t *ui_containercolorbarhome1;
-extern lv_obj_t *ui_containercolorbannerbottom1;
+extern lv_obj_t *ui_containertopbarairpressure;
+extern lv_obj_t *ui_labeltoptexthome1;
 extern lv_obj_t *ui_labelairpressuretext;
-extern lv_obj_t *ui_labelairpressurevalue;
+extern lv_obj_t *ui_containervalueairpressure;
+extern lv_obj_t *ui_labelairpressure;
+extern lv_obj_t *ui_labelunit;
+extern lv_obj_t *ui_containerbottombarairpressure;
 extern lv_obj_t *ui_imgconnected1;
 extern lv_obj_t *ui_labeldatetime1;
 void ui_event_buttonoptions1( lv_event_t * e);
@@ -55,34 +61,38 @@ extern lv_obj_t *ui_buttonoptions1;
 void ui_screenhomeco2_screen_init(void);
 void ui_event_screenhomeco2( lv_event_t * e);
 extern lv_obj_t *ui_screenhomeco2;
-extern lv_obj_t *ui_labeltitlehomescreen2;
-extern lv_obj_t *ui_containercolorbarhome2;
-extern lv_obj_t *ui_barroomclimate1;
-extern lv_obj_t *ui_containercolorbannerbottom2;
-extern lv_obj_t *ui_labelco2leveltext;
-extern lv_obj_t *ui_labelco2levelvalue;
+extern lv_obj_t *ui_containertopbarco2;
+extern lv_obj_t *ui_labeltoptexthome2;
+extern lv_obj_t *ui_containertextco2;
+extern lv_obj_t *ui_labelco2letters;
+extern lv_obj_t *ui_labelco2number;
+extern lv_obj_t *ui_containervalueco2;
+extern lv_obj_t *ui_labelco2eval;
+extern lv_obj_t *ui_labelco2value;
+extern lv_obj_t *ui_labelco2unit;
+extern lv_obj_t *ui_containerbottombarco2;
 extern lv_obj_t *ui_imgconnected2;
 extern lv_obj_t *ui_labeldatetime2;
 void ui_event_buttonoptions2( lv_event_t * e);
 extern lv_obj_t *ui_buttonoptions2;
-extern lv_obj_t *ui_label3;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_screenoptions
 void ui_screenoptions_screen_init(void);
 extern lv_obj_t *ui_screenoptions;
-extern lv_obj_t *ui_labeltitleoptions;
 extern lv_obj_t *ui_containercolorbaroptions;
 void ui_event_buttonexitfromoptions( lv_event_t * e);
 extern lv_obj_t *ui_buttonexitfromoptions;
+extern lv_obj_t *ui_labeltitleoptions;
+void ui_event_buttonpin( lv_event_t * e);
+extern lv_obj_t *ui_buttonpin;
+extern lv_obj_t *ui_container4;
 extern lv_obj_t *ui_buttonrooms;
 extern lv_obj_t *ui_buttonoutdoorsensor;
 extern lv_obj_t *ui_buttonwifi;
 extern lv_obj_t *ui_buttonlanguage;
-extern lv_obj_t *ui_buttonfurtheroptions;
 extern lv_obj_t *ui_buttonsensoractivity;
-void ui_event_buttonpin( lv_event_t * e);
-extern lv_obj_t *ui_buttonpin;
+extern lv_obj_t *ui_buttonfurtheroptions;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_screenpin
@@ -138,25 +148,33 @@ extern lv_obj_t *ui_containercolorbaroptions7;
 extern lv_obj_t *ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
-LV_IMG_DECLARE( ui_img_icons_settings_png);   // assets/icons/settings.png
-LV_IMG_DECLARE( ui_img_icons_indoor_png);   // assets/icons/indoor.png
-LV_IMG_DECLARE( ui_img_icons_humidity_png);   // assets/icons/humidity.png
-LV_IMG_DECLARE( ui_img_icons_outdoor_png);   // assets/icons/outdoor.png
-LV_IMG_DECLARE( ui_img_icons_connected_png);   // assets/icons/connected.png
+LV_IMG_DECLARE( ui_img_icons_indoor_57x108_png);   // assets/icons/indoor_57x108.png
+LV_IMG_DECLARE( ui_img_icons_humidity_72x108_png);   // assets/icons/humidity_72x108.png
+LV_IMG_DECLARE( ui_img_icons_outdoor_108x108_png);   // assets/icons/outdoor_108x108.png
+LV_IMG_DECLARE( ui_img_icons_connected_35x35_png);   // assets/icons/connected_35x35.png
+LV_IMG_DECLARE( ui_img_icons_settings_50x50_png);   // assets/icons/settings_50x50.png
 LV_IMG_DECLARE( ui_img_icons_arrow_left_white_png);   // assets/icons/arrow_left_white.png
+LV_IMG_DECLARE( ui_img_icons_key_icon_small_png);   // assets/icons/key_icon_small.png
 LV_IMG_DECLARE( ui_img_icons_rooms_png);   // assets/icons/rooms.png
 LV_IMG_DECLARE( ui_img_icons_outdoor_white_png);   // assets/icons/outdoor_white.png
 LV_IMG_DECLARE( ui_img_icons_wifi_icon_small_png);   // assets/icons/wifi_icon_small.png
 LV_IMG_DECLARE( ui_img_icons_language_png);   // assets/icons/language.png
-LV_IMG_DECLARE( ui_img_icons_options_png);   // assets/icons/options.png
 LV_IMG_DECLARE( ui_img_icons_list_icon_png);   // assets/icons/list_icon.png
-LV_IMG_DECLARE( ui_img_icons_key_icon_small_png);   // assets/icons/key_icon_small.png
+LV_IMG_DECLARE( ui_img_icons_options_png);   // assets/icons/options.png
 LV_IMG_DECLARE( ui_img_icons_signal0_png);   // assets/icons/signal0.png
 LV_IMG_DECLARE( ui_img_icons_signal1_png);   // assets/icons/signal1.png
 LV_IMG_DECLARE( ui_img_icons_signal2_png);   // assets/icons/signal2.png
 LV_IMG_DECLARE( ui_img_icons_signal3_png);   // assets/icons/signal3.png
 LV_IMG_DECLARE( ui_img_icons_signal4_png);   // assets/icons/signal4.png
 LV_IMG_DECLARE( ui_img_icons_signal5_png);   // assets/icons/signal5.png
+LV_IMG_DECLARE( ui_img_icons_rooms_84x72_png);   // assets/icons/rooms_84x72.png
+
+// FONTS
+LV_FONT_DECLARE( ui_font_header1Regular);
+LV_FONT_DECLARE( ui_font_bodyLargeRegular);
+LV_FONT_DECLARE( ui_font_valueLargeRegular);
+LV_FONT_DECLARE( ui_font_bodyNormalRegular);
+LV_FONT_DECLARE( ui_font_bodySmallRegular);
 
 // UI INIT
 void ui_init(void);

@@ -1,7 +1,68 @@
 {
   "deftheme": {
     "name": "Default",
-    "properties": []
+    "properties": [
+      {
+        "nid": 1000146,
+        "strtype": "THEME_COLOR",
+        "strval": "green",
+        "intarray": [
+          59,
+          168,
+          15,
+          255
+        ],
+        "InheritedType": 0
+      },
+      {
+        "nid": 1000150,
+        "strtype": "THEME_COLOR",
+        "strval": "lightGrey",
+        "intarray": [
+          187,
+          187,
+          187,
+          255
+        ],
+        "InheritedType": 0
+      },
+      {
+        "nid": 1000151,
+        "strtype": "THEME_COLOR",
+        "strval": "white",
+        "intarray": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "InheritedType": 0
+      },
+      {
+        "nid": 1000152,
+        "strtype": "THEME_COLOR",
+        "strval": "darkGrey",
+        "intarray": [
+          106,
+          106,
+          106,
+          255
+        ],
+        "InheritedType": 0
+      },
+      {
+        "nid": 1000153,
+        "strtype": "THEME_COLOR",
+        "strval": "grey",
+        "intarray": [
+          143,
+          143,
+          143,
+          255
+        ],
+        "InheritedType": 0
+      }
+    ]
   },
   "themes": [],
   "selected_theme": "Default"

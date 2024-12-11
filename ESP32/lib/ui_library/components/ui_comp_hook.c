@@ -3,3 +3,16 @@
 // LVGL version: 8.3.11
 // Project name: hsb_indicator
 
+#include "../ui.h"
+
+void ui_comp_labeltitlehomescreen_create_hook( lv_obj_t * comp)
+{
+}
+
+void ui_comp_labeltitlehomescreen3_create_hook( lv_obj_t * comp)
+{
+}
+
+void ui_comp_containercolorbannerbottom1_create_hook( lv_obj_t * comp)
+{
+}

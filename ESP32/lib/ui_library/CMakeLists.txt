@@ -1,4 +1,8 @@
-SET(SOURCES screens/ui_screenhome.c
+SET(SOURCES components/ui_comp_containercolorbannerbottom1.c
+    components/ui_comp_labeltitlehomescreen.c
+    components/ui_comp_labeltitlehomescreen3.c
+    components/ui_comp.c
+    screens/ui_screenhome.c
     screens/ui_screenhomeairpressure.c
     screens/ui_screenhomeco2.c
     screens/ui_screenoptions.c
@@ -9,27 +13,35 @@ SET(SOURCES screens/ui_screenhome.c
     screens/ui_screenlanguage.c
     screens/ui_screenfurtheroptions.c
     screens/ui_screensensoractivity.c
+    ui_theme_manager.c
+    ui_themes.c
     ui.c
     components/ui_comp_hook.c
     ui_helpers.c
-    images/ui_img_icons_settings_png.c
-    images/ui_img_icons_indoor_png.c
-    images/ui_img_icons_humidity_png.c
-    images/ui_img_icons_outdoor_png.c
-    images/ui_img_icons_connected_png.c
+    images/ui_img_icons_indoor_57x108_png.c
+    images/ui_img_icons_humidity_72x108_png.c
+    images/ui_img_icons_outdoor_108x108_png.c
+    images/ui_img_icons_connected_35x35_png.c
+    images/ui_img_icons_settings_50x50_png.c
     images/ui_img_icons_arrow_left_white_png.c
+    images/ui_img_icons_key_icon_small_png.c
     images/ui_img_icons_rooms_png.c
     images/ui_img_icons_outdoor_white_png.c
     images/ui_img_icons_wifi_icon_small_png.c
     images/ui_img_icons_language_png.c
-    images/ui_img_icons_options_png.c
     images/ui_img_icons_list_icon_png.c
-    images/ui_img_icons_key_icon_small_png.c
+    images/ui_img_icons_options_png.c
     images/ui_img_icons_signal0_png.c
     images/ui_img_icons_signal1_png.c
     images/ui_img_icons_signal2_png.c
     images/ui_img_icons_signal3_png.c
     images/ui_img_icons_signal4_png.c
-    images/ui_img_icons_signal5_png.c)
+    images/ui_img_icons_signal5_png.c
+    images/ui_img_icons_rooms_84x72_png.c
+    fonts/ui_font_header1Regular.c
+    fonts/ui_font_bodyLargeRegular.c
+    fonts/ui_font_valueLargeRegular.c
+    fonts/ui_font_bodyNormalRegular.c
+    fonts/ui_font_bodySmallRegular.c)
 
 add_library(ui ${SOURCES})
