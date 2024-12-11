@@ -1,0 +1,16 @@
+{
+  "codename": "bodySmallRegular",
+  "ttf_path": "/assets/fonts/ClearSans-Regular.ttf",
+  "bin_path": "/assets/fonts/ui_font_bodySmallRegular.bin",
+  "c_path": "/assets/fonts/ui_font_bodySmallRegular.c",
+  "cfg_path": "/assets/fonts/ui_font_bodySmallRegular.fcfg",
+  "size": 16,
+  "bpp": 2,
+  "letters": 3,
+  "ranges": [
+    "0x20-0xff"
+  ],
+  "symbols": "ßüÜöÖäÄ",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

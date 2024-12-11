@@ -1,0 +1,16 @@
+{
+  "codename": "valueLargeRegular",
+  "ttf_path": "/assets/fonts/ClearSans-Regular.ttf",
+  "bin_path": "/assets/fonts/ui_font_valueLargeRegular.bin",
+  "c_path": "/assets/fonts/ui_font_valueLargeRegular.c",
+  "cfg_path": "/assets/fonts/ui_font_valueLargeRegular.fcfg",
+  "size": 45,
+  "bpp": 2,
+  "letters": 3,
+  "ranges": [
+    "0x20-0xff"
+  ],
+  "symbols": "ßüÜöÖäÄ",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

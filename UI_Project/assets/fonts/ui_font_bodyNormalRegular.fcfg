@@ -1,0 +1,16 @@
+{
+  "codename": "bodyNormalRegular",
+  "ttf_path": "/assets/fonts/ClearSans-Regular.ttf",
+  "bin_path": "/assets/fonts/ui_font_bodyNormalRegular.bin",
+  "c_path": "/assets/fonts/ui_font_bodyNormalRegular.c",
+  "cfg_path": "/assets/fonts/ui_font_bodyNormalRegular.fcfg",
+  "size": 30,
+  "bpp": 2,
+  "letters": 3,
+  "ranges": [
+    "0x20-0xff"
+  ],
+  "symbols": "ßüÜöÖäÄ",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}
